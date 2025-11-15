@@ -1,85 +1,186 @@
+EV Charging Load Forecasting
 
-**Electric Vehicle Charging Load Forecasting Using ML**
+A simple and practical machine-learning project that predicts future EV charging energy demand using cleaned historical data and a trained model.
 
-This project predicts future EV (Electric Vehicle) charging energy demand using machine learning.
-It helps to estimate how much electricity EV chargers will use in the next few hours or days.
+⭐ Features
 
-***This is useful for:***
+✨ Predict future EV charging load
+📈 Visualize actual vs predicted results
+🔮 Generate next-24-hour forecast
+🧠 ML model trained using XGBoost
+📂 Clean project structure
+📊 Rolling and lag-based feature engineering
+💾 Model and scaler saved for reuse
+🖥 Command-line scripts for training & forecasting
+🌐 Optional Streamlit web app
 
-1.Power grid management
+📚 What This Project Does
 
-2.Charging station planning
+This project uses historical EV charging data to forecast upcoming energy demand.
+It includes everything needed to:
 
-3.Reducing overload and blackouts
+Preprocess and transform raw data
 
-4.Energy cost optimization
+Train a machine learning model
 
-The project uses a cleaned dataset, trains a machine learning model, and forecasts future energy demand.
+Save the model and scaler
 
-***This project includes:***
+Predict future data
 
-1.Cleaned dataset 
+Generate visual charts
 
-2.Preprocessing script
+Run a user-friendly prediction interface
 
-3.Model training script
+🚀 Usage
+Training the Model
 
-4.Scaling tool (scaler.pkl)
+Runs preprocessing + feature engineering + model training.
 
-5.Forecasting script
-
-6.Visualization script
-
-7.Optional Streamlit App
-
-***Requirements***
-
-Install all needed libraries using:
-
-pip install -r requirements.txt
+cd src
+python train_and_save.py
 
 
-The main libraries used are:
+This will generate:
 
-pandas
+models/ev_model.pkl
 
-numpy
+models/scaler.pkl
+
+Forecasting Future Demand
+
+Predicts the next 24 hours automatically:
+
+python forecast_script.py
+
+
+This outputs:
+
+models/next_24h_forecast.csv
+
+Viewing Predictions (Graphs)
+python visualize.py
+
+
+Generates:
+
+actual_vs_predicted.png
+
+next_24h_forecast.png
+
+Predicting Custom Values
+
+Use the built-in Streamlit UI:
+
+streamlit run app_streamlit.py
+
+
+Here you can:
+
+Enter hour, lag features, weekday, etc.
+
+Get predicted EV load instantly
+
+🏷 Data Requirements
+
+Your dataset must include:
+
+timestamp — date/time column
+
+energy_demand — target column
+
+Optional helpful data:
+
+temperature
+
+charger count
+
+station location
+
+usage patterns
+
+The scripts will automatically extract:
+
+hour
+
+day
+
+month
+
+weekday
+
+lag features
+
+rolling averages
+
+🔍 Search / Filtering (Feature Engineering)
+
+The model can use engineered features such as:
+
+demand_lag_1 (previous hour)
+
+demand_lag_24 (same hour previous day)
+
+demand_roll_24_mean
+
+These help the model understand trends and seasonality.
+
+💾 Storage & Persistence
+
+The project stores:
+
+trained model (ev_model.pkl)
+
+scaler (scaler.pkl)
+
+forecasts (next_24h_forecast.csv)
+
+All of these are placed in the /models/ folder.
+
+📱 Compatibility
+
+Works on any system with:
+
+Python 3.8+
+
+pandas, numpy
 
 scikit-learn
 
 xgboost
 
-matplotlib
-
 joblib
 
-***How to Run the Project***
+matplotlib
 
-1️⃣ Place your dataset
+streamlit (optional UI)
 
-2️⃣ Train the Model
+Install everything using:
 
-3️⃣ Forecast the Next 24 Hours
+pip install -r requirements.txt
 
-4️⃣ Visualize the Results
+🎨 Customization
 
-***Goal of This Project***
+You can easily customize this project by:
 
-The aim is to build a complete end-to-end EV charging forecasting system, including:
+Editing feature engineering in data_preprocessing.py
 
-data preprocessing
+Adding weather or external APIs
 
-feature engineering
+Replacing XGBoost with LSTM or Prophet
 
-machine learning
+Changing look & UI in the Streamlit app
 
-forecasting
+Adding dashboards or cloud deployment
 
-visualization
-
-***Author***
-
-Nayana D- EV load forecasting
-
-
-
+📂 Folder Structure
+EV-Charging-Forecasting/
+│── data/
+│── models/
+│── src/
+│   ├── data_preprocessing.py
+│   ├── train_and_save.py
+│   ├── forecast_script.py
+│   ├── visualize.py
+│   └── app_streamlit.py
+│── README.md
+│── requirements.txt
