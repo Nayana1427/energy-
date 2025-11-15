@@ -13,28 +13,19 @@ The project uses a cleaned dataset, trains a machine learning model, and forecas
 
 This project includes:
 
-> Cleaned dataset (cleaned_ev_charging_dataset.csv)
-Contains timestamp-based EV charging energy data.
+> Cleaned dataset 
 
 > Preprocessing script
-Cleans the data and creates features like hour, weekday, lag values, etc.
 
 > Model training script
-Trains an XGBoost model and saves it as ev_model.pkl.
 
 > Scaling tool (scaler.pkl)
-The scaler ensures new data matches training format.
 
 > Forecasting script
-Predicts the next 24 hours (or custom hours).
 
 > Visualization script
-Creates graphs like:
-Actual vs Predicted
-24-hour forecast graph
 
 > Optional Streamlit App
-A simple user interface to view predictions.
 
 Requirements
 
