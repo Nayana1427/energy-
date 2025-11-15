@@ -18,19 +18,19 @@ The project uses a cleaned dataset, trains a machine learning model, and forecas
 
 ***This project includes:***
 
-> Cleaned dataset 
+1.Cleaned dataset 
 
-> Preprocessing script
+2. Preprocessing script
 
-> Model training script
+3.Model training script
 
-> Scaling tool (scaler.pkl)
+4. Scaling tool (scaler.pkl)
 
-> Forecasting script
+5.Forecasting script
 
-> Visualization script
+6.Visualization script
 
-> Optional Streamlit App
+7.Optional Streamlit App
 
 ***Requirements***
 
