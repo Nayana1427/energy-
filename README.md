@@ -1,5 +1,5 @@
 
-##**Electric Vehicle Charging Load Forecasting Using ML**
+**Electric Vehicle Charging Load Forecasting Using ML**
 
 This project predicts future EV (Electric Vehicle) charging energy demand using machine learning.
 It helps to estimate how much electricity EV chargers will use in the next few hours or days.
