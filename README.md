@@ -5,8 +5,11 @@ It helps to estimate how much electricity EV chargers will use in the next few h
 This is useful for:
 
 1.Power grid management
+
 2.Charging station planning
+
 3.Reducing overload and blackouts
+
 4.Energy cost optimization
 
 The project uses a cleaned dataset, trains a machine learning model, and forecasts future energy demand.
@@ -37,10 +40,15 @@ pip install -r requirements.txt
 The main libraries used are:
 
 pandas
+
 numpy
+
 scikit-learn
+
 xgboost
+
 matplotlib
+
 joblib
 
 How to Run the Project
@@ -56,10 +64,15 @@ How to Run the Project
 Goal of This Project
 
 The aim is to build a complete end-to-end EV charging forecasting system, including:
+
 data preprocessing
+
 feature engineering
+
 machine learning
+
 forecasting
+
 visualization
 
 
