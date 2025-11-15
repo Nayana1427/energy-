@@ -1,10 +1,10 @@
 
-##Electric Vehicle Charging Load Forecasting Using ML
+**Electric Vehicle Charging Load Forecasting Using ML**
 
 This project predicts future EV (Electric Vehicle) charging energy demand using machine learning.
 It helps to estimate how much electricity EV chargers will use in the next few hours or days.
 
-#This is useful for:
+***This is useful for:***
 
 1.Power grid management
 
@@ -16,7 +16,7 @@ It helps to estimate how much electricity EV chargers will use in the next few h
 
 The project uses a cleaned dataset, trains a machine learning model, and forecasts future energy demand.
 
-#This project includes:
+***This project includes:***
 
 > Cleaned dataset 
 
@@ -32,7 +32,7 @@ The project uses a cleaned dataset, trains a machine learning model, and forecas
 
 > Optional Streamlit App
 
-#Requirements
+***Requirements***
 
 Install all needed libraries using:
 
@@ -53,7 +53,7 @@ matplotlib
 
 joblib
 
-#How to Run the Project
+***How to Run the Project***
 
 1️⃣ Place your dataset
 
@@ -63,7 +63,7 @@ joblib
 
 4️⃣ Visualize the Results
 
-#Goal of This Project
+***Goal of This Project***
 
 The aim is to build a complete end-to-end EV charging forecasting system, including:
 
