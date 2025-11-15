@@ -78,7 +78,8 @@ forecasting
 visualization
 
 ***Author***
-Nayana D EV load forecasting
+
+Nayana D- EV load forecasting
 
 
 
